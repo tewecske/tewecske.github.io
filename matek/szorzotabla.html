@@ -16,16 +16,6 @@
             margin: 0;
         }
 
-        .container {
-            text-align: center;
-        }
-
-        .exercise {
-            font-size: 48px;
-            color: black;
-            margin-bottom: 20px;
-        }
-
         input[type="number"] {
             font-size: 24px;
             width: 100px;
@@ -44,9 +34,40 @@
             cursor: pointer;
         }
 
+        .container {
+            text-align: center;
+            justify-items: center;
+        }
+
+        .exercise {
+            margin-bottom: 20px;
+            width: 30rem;
+            height: 6rem;
+        }
+
+        .numbers {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 48px;
+            color: black;
+            height: 6rem;
+        }
+
         .feedback {
+            display: inline-block;
+            vertical-align: top;
             font-size: 36px;
             margin-left: 10px;
+            width: 4rem;
+            height: 6rem;
+        }
+
+        .message {
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 30rem;
+            height: 3rem;
         }
     </style>
 </head>
@@ -54,15 +75,40 @@
 <body>
     <div class="container">
         <div class="exercise">
-            <span id="num1"></span> x <span id="num2"></span> =
-            <input type="number" id="answer" inputmode="numeric">
+            <span class="numbers">
+                <span id="num1"></span> x <span id="num2"></span> =
+                <input type="number" id="answer" inputmode="numeric">
+            </span>
             <span class="feedback" id="feedback"></span>
         </div>
+        <div class="message" id="message"></div>
         <button id="submitBtn">Ellenőrzés</button>
     </div>
 
     <script>
         let num1, num2, correctAnswer;
+
+        const positiveMessages = [
+            "Ez az!", "Szép volt!", "Ügyes vagy!", "Gratulálok!", "Remek munka!",
+            "Szuper vagy!", "Nagyszerű!", "Fantasztikus!", "Okos vagy!", "Bravó!",
+            "Kitűnő!", "Zseniális!", "Csodás!", "Gyönyörű!", "Lenyűgöző!",
+            "Pompás!", "Remekeltél!", "Szenzációs!", "Tökéletes!", "Ámulatos!"
+        ];
+
+        const encouragingMessages = [
+            "Próbáld újra!", "Következőre menni fog!", "Ne add fel!", "Majdnem sikerült!",
+            "Hajrá, még egyszer!", "Biztos vagyok benne, hogy képes vagy rá!", "Hiszek benned!",
+            "Gyakorlás teszi a mestert!", "Csak így tovább!", "Már egész közel jársz!",
+            "Gondold át még egyszer!",
+            "Minden próbálkozással okosabb leszel!", "Lépésről lépésre sikerülni fog!",
+            "Nem baj, tanuljunk a hibáinkból!", "A kitartás a siker kulcsa!",
+            "Koncentrálj, menni fog!",
+            "Légy büszke magadra, hogy próbálkozol!", "A hibák segítenek a tanulásban!"
+        ];
+
+        function getRandomMessage(array) {
+            return array[Math.floor(Math.random() * array.length)];
+        }
 
         function generateProblem() {
             num1 = Math.floor(Math.random() * 10) + 1;
@@ -72,6 +118,7 @@
             document.getElementById('num2').textContent = num2;
             document.getElementById('answer').value = '';
             document.getElementById('feedback').textContent = '';
+            document.getElementById('message').textContent = '';
             document.getElementById('submitBtn').textContent = 'Ellenőrzés';
             document.getElementById('answer').focus();
         }
@@ -79,15 +126,20 @@
         function checkAnswer() {
             const userAnswer = parseInt(document.getElementById('answer').value);
             const feedbackElement = document.getElementById('feedback');
+            const messageElement = document.getElementById('message');
             const submitBtn = document.getElementById('submitBtn');
 
             if (userAnswer === correctAnswer) {
                 feedbackElement.textContent = '✅';
                 feedbackElement.style.color = 'green';
+                messageElement.textContent = getRandomMessage(positiveMessages);
+                messageElement.style.color = 'green';
                 submitBtn.textContent = 'Következő';
             } else {
                 feedbackElement.textContent = '❌';
                 feedbackElement.style.color = 'red';
+                messageElement.textContent = getRandomMessage(encouragingMessages);
+                messageElement.style.color = 'black';
             }
         }
 
