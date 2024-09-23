@@ -17,7 +17,14 @@
             </span>
             <span class="feedback" id="feedback"></span>
         </div>
-        <div class="message" id="message"></div>
+        <div class="message-container">
+            <img class="flag-img" src="../flags/hu.svg" alt="Magyar">
+            <span class="message" id="message"></span>
+        </div>
+        <div class="message-container">
+            <img class="flag-img" src="../flags/de.svg" alt="Deutsch">
+            <span class="message" id="messageDE"></span>
+        </div>
         <button id="submitBtn">Ellenőrzés</button>
     </div>
 
@@ -34,7 +41,7 @@
         const encouragingMessages = [
             "Próbáld újra!", "Következőre menni fog!", "Ne add fel!", "Majdnem sikerült!",
             "Hajrá, még egyszer!", "Biztos vagyok benne, hogy képes vagy rá!", "Hiszek benned!",
-            "Gyakorlás teszi a mestert!", "Csak így tovább!", "Már egész közel jársz!",
+            "Gyakorlás teszi a mestert!", "Már egész közel jársz!",
             "Gondold át még egyszer!",
             "Minden próbálkozással okosabb leszel!", "Lépésről lépésre sikerülni fog!",
             "Nem baj, tanuljunk a hibáinkból!", "A kitartás a siker kulcsa!",
@@ -42,10 +49,27 @@
             "Légy büszke magadra, hogy próbálkozol!", "A hibák segítenek a tanulásban!"
         ];
 
-        function getRandomMessage(array) {
-            return array[Math.floor(Math.random() * array.length)];
-        }
+        const positiveMessagesDE = [
+            "Das ist es!", "Gut gemacht!", "Du bist geschickt!", "Gratuliere!",
+            "Tolle Arbeit!", "Du bist super!", "Großartig!", "Fantastisch!",
+            "Du bist schlau!", "Bravo!", "Ausgezeichnet!", "Genial!",
+            "Wunderbar!", "Schön!", "Beeindruckend!", "Prächtig!",
+            "Du hast es drauf!", "Sensationell!", "Perfekt!", "Erstaunlich!"
+        ];
 
+        const encouragingMessagesDE = [
+            "Versuch's noch einmal!", "Beim nächsten Mal klappt's!", "Gib nicht auf!",
+            "Fast geschafft!", "Weiter so, noch einmal!", "Ich bin sicher, du schaffst das!",
+            "Ich glaube an dich!", "Übung macht den Meister!",
+            "Du bist schon ganz nah dran!", "Denk noch einmal darüber nach!",
+            "Mit jedem Versuch wirst du klüger!", "Schritt für Schritt wirst du es schaffen!",
+            "Kein Problem, lass uns aus Fehlern lernen!", "Ausdauer ist der Schlüssel zum Erfolg!",
+            "Konzentriere dich, du schaffst das!", "Sei stolz auf dich, dass du es versuchst!",
+            "Fehler helfen uns beim Lernen!"
+        ];
+        function getRandomMessageNumber(array) {
+            return Math.floor(Math.random() * array.length);
+        }
         function generateProblem() {
             num1 = Math.floor(Math.random() * 10) + 1;
             num2 = Math.floor(Math.random() * 10) + 1;
@@ -55,7 +79,13 @@
             document.getElementById('answer').value = '';
             document.getElementById('feedback').textContent = '';
             document.getElementById('message').textContent = '';
+            document.getElementById('messageDE').textContent = '';
             document.getElementById('submitBtn').textContent = 'Ellenőrzés';
+            let elements = document.getElementsByClassName('flag-img');
+            for (let el of elements) {
+                el.classList.remove('visible');
+                el.classList.add('invisible');
+            }
             document.getElementById('answer').focus();
         }
 
@@ -63,19 +93,33 @@
             const userAnswer = parseInt(document.getElementById('answer').value);
             const feedbackElement = document.getElementById('feedback');
             const messageElement = document.getElementById('message');
+            const messageElementDE = document.getElementById('messageDE');
             const submitBtn = document.getElementById('submitBtn');
 
             if (userAnswer === correctAnswer) {
                 feedbackElement.textContent = '✅';
                 feedbackElement.style.color = 'green';
-                messageElement.textContent = getRandomMessage(positiveMessages);
+                const randomMessageNumber = getRandomMessageNumber(positiveMessages);
+                messageElement.textContent = positiveMessages[randomMessageNumber];
                 messageElement.style.color = 'green';
+                messageElementDE.textContent = positiveMessagesDE[randomMessageNumber];
+                messageElementDE.style.color = 'green';
                 submitBtn.textContent = 'Következő';
             } else {
                 feedbackElement.textContent = '❌';
                 feedbackElement.style.color = 'red';
-                messageElement.textContent = getRandomMessage(encouragingMessages);
+                const randomMessageNumber = getRandomMessageNumber(encouragingMessages);
+                messageElement.textContent = encouragingMessages[randomMessageNumber];
                 messageElement.style.color = 'black';
+                messageElementDE.textContent = encouragingMessagesDE[randomMessageNumber];
+                messageElementDE.style.color = 'black';
+                document.getElementById('answer').focus();
+                document.getElementById('answer').select();
+            }
+            let elements = document.getElementsByClassName('flag-img');
+            for (let el of elements) {
+                el.classList.remove('invisible');
+                el.classList.add('visible');
             }
         }
 

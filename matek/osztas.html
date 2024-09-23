@@ -67,9 +67,6 @@
             "Konzentriere dich, du schaffst das!", "Sei stolz auf dich, dass du es versuchst!",
             "Fehler helfen uns beim Lernen!"
         ];
-        function getRandomMessage(array) {
-            return array[Math.floor(Math.random() * array.length)];
-        }
         function getRandomMessageNumber(array) {
             return Math.floor(Math.random() * array.length);
         }
@@ -117,6 +114,8 @@
                 messageElement.style.color = 'black';
                 messageElementDE.textContent = encouragingMessagesDE[randomMessageNumber];
                 messageElementDE.style.color = 'black';
+                document.getElementById('answer').focus();
+                document.getElementById('answer').select();
             }
             let elements = document.getElementsByClassName('flag-img');
             for (let el of elements) {
