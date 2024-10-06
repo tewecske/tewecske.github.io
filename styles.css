@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    /* height: 70vh; */
     margin: 0;
 }
 
@@ -71,6 +71,10 @@ button {
     display: flex;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 ul {
     list-style: none;
     display: flex;
@@ -93,6 +97,10 @@ ul {
 
 .long.exercise {
     height: 18rem;
+}
+
+body div.container {
+    margin-top: 1rem;
 }
 
 .container {

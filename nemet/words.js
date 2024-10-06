@@ -115,13 +115,29 @@ function shuffleArray(array) {
     return array;
 }
 
+let memory = {
+    nouns: [],
+    expressions: [],
+    questions: [],
+    other: [],
+}
+
 function getNewQuestion() {
     const categories = Object.keys(wordGroups);
     currentCategory = categories[Math.floor(Math.random() * categories.length)];
     const words = wordGroups[currentCategory];
     const shuffledWords = shuffleArray([...words]);
-    currentWord = shuffledWords[0];
-
+    let currentWordIdx = 0;
+    currentWord = shuffledWords[currentWordIdx];
+    if (memory[currentCategory].length > words.length - 1) {
+        memory[currentCategory].length = 0;
+    }
+    while (memory[currentCategory].indexOf(currentWord) !== -1) {
+        currentWord = shuffledWords.shift();
+        shuffledWords.push(currentWord);
+        currentWord = shuffledWords[currentWordIdx];
+    }
+    memory[currentCategory].push(currentWord);
 
     document.getElementById('message').textContent = '';
     document.getElementById('messageDE').textContent = '';
