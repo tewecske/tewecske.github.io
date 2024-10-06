@@ -86,10 +86,10 @@ ul {
     gap: 1rem;
 }
 
-.main {
-    position: relative;
-    top: -2rem;
-}
+/* .main { */
+/*     position: relative; */
+/*     top: -2rem; */
+/* } */
 
 .long.exercise {
     height: 18rem;
