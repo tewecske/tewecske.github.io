@@ -53,7 +53,16 @@ const wordGroups = {
         { hungarian: "kedvenc szín", german: "die Lieblingsfarbe" },
         { hungarian: "kosárlabda", german: "der Basketball" },
         { hungarian: "tanárnő", german: "die Lehrerin" },
-        { hungarian: "igazgató", german: "der Direktor" }
+        { hungarian: "igazgató", german: "der Direktor" },
+        { hungarian: "zászó", german: "die Fahne" },
+        { hungarian: "matek", german: "die Mathematik" },
+        { hungarian: "CD", german: "die CD" },
+        { hungarian: "internet", german: "das Internet" },
+        { hungarian: "diszkó", german: "die Disco" },
+        { hungarian: "tenisz", german: "das Tennis" },
+        { hungarian: "pingpong", german: "das Tischtennis" },
+        { hungarian: "fogócska", german: "das Fangen" },
+        { hungarian: "foci", german: "der Fußball" },
     ],
     // adjectives: [
     //     { hungarian: "kedves", german: "nett" }
@@ -64,12 +73,21 @@ const wordGroups = {
     expressions: [
         { hungarian: "Hallgasd csak!", german: "Hör mal!" },
         { hungarian: "Nézd csak!", german: "Sieh mal!" },
-        { hungarian: "Nem értem", german: "Ich verstehe nicht" }
+        { hungarian: "Nem értem", german: "Ich verstehe nicht" },
+        { hungarian: "legjobb barát", german: "meine beste Freund" },
+        { hungarian: "legjobb barátnő", german: "meine beste Freundin" },
+        { hungarian: "Gyere, játszunk!", german: "Komm, wir spielen" },
+        { hungarian: "Tudom", german: "Ich weiß" },
+        { hungarian: "Te következel", german: "Du bist dran" },
+        { hungarian: "Rajta!", german: "Also los!" },
+        { hungarian: "Nyertem!", german: "Gewonnen!" },
     ],
     questions: [
         { hungarian: "Ki vagy te?", german: "Wer bist du denn?" },
         { hungarian: "Ki?", german: "Wer?" },
-        { hungarian: "Ki vagyok én?", german: "Wer bin ich?" }
+        { hungarian: "Ki vagyok én?", german: "Wer bin ich?" },
+        { hungarian: "Mit?", german: "Was denn?" },
+        { hungarian: "Mi jön utána?", german: "Was komm dann?" },
     ],
     // numbers: [
     //     { hungarian: "egy", german: "eins" },
@@ -99,7 +117,16 @@ const wordGroups = {
         { hungarian: "tizenegy", german: "elf" },
         { hungarian: "tizenkettő", german: "zwölf" },
         { hungarian: "kedves", german: "nett" },
+        { hungarian: "helyes/jó", german: "richtig" },
+        { hungarian: "hibás", german: "falsch" },
+        { hungarian: "most", german: "jetzt" },
         { hungarian: "beszélni", german: "sprechen" },
+        { hungarian: "kockázás", german: "würfeln" },
+        { hungarian: "ugrókötelezés", german: "seilspringen" },
+        { hungarian: "bújócska", german: "verstecken" },
+        { hungarian: "kártyajáték", german: "karten" },
+        { hungarian: "jönni", german: "kommen" },
+        { hungarian: "jön", german: "kommt" },
     ]
 };
 
