@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 70vh;
     margin: 0;
 }
 
@@ -15,6 +15,25 @@ input[type="number"] {
     border: 2px solid darkblue;
     border-radius: 10px;
 }
+
+.derdiedas {
+    margin-bottom: 2rem;
+}
+
+.derdiedas button {
+    padding: 6px 12px;
+}
+
+.derdiedas button,
+.options button {
+    background-color: darkcyan;
+}
+
+.derdiedas button.isselected,
+.options button.isselected {
+    background-color: darkslateblue;
+}
+
 
 button {
     font-size: 24px;
@@ -59,8 +78,17 @@ ul {
 }
 
 .navbar {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     gap: 1rem;
+}
+
+.main {
+    position: relative;
+    top: -2rem;
+}
+
+.long.exercise {
+    height: 18rem;
 }
 
 .container {
@@ -75,7 +103,8 @@ ul {
     height: 4rem;
 }
 
-.numbers {
+.numbers,
+.question {
     display: inline-block;
     vertical-align: top;
     font-size: 48px;
