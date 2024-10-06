@@ -207,6 +207,10 @@ function checkAnswer() {
     const messageElementDE = document.getElementById('messageDE');
     const submitBtn = document.getElementById('submitBtn');
     if (isCorrect) {
+        if (dddSelected !== null) {
+            dddSelected.classList.add('correct');
+        }
+        optionSelected.classList.add('correct');
         const buttons = document.querySelectorAll('.options button');
         buttons.forEach(button => button.disabled = true);
         

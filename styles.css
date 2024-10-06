@@ -34,6 +34,10 @@ input[type="number"] {
     background-color: darkslateblue;
 }
 
+.options button.isselected.correct,
+.derdiedas button.isselected.correct {
+    background-color: darkgreen;
+}
 
 button {
     font-size: 24px;
