@@ -81,6 +81,13 @@ const wordGroups = {
         { hungarian: "Te következel", german: "Du bist dran" },
         { hungarian: "Rajta!", german: "Also los!" },
         { hungarian: "Nyertem!", german: "Gewonnen!" },
+        // week 6
+        { hungarian: "Áruljátok el!", german: "Ratet!" },
+        { hungarian: "Viszontlátásra!", german: "Auf Wiedersehen!" },
+        { hungarian: "Szia!", german: "Tschüs!" },
+        { hungarian: "(Mi) nem csinálunk semmit", german: "Wir machen nichts" },
+        { hungarian: "Milyen unalmas!", german: "Wie langweilig!" },
+        { hungarian: "Sajnálom", german: "Tut mir leid" },
     ],
     questions: [
         { hungarian: "Ki vagy te?", german: "Wer bist du denn?" },
@@ -88,6 +95,12 @@ const wordGroups = {
         { hungarian: "Ki vagyok én?", german: "Wer bin ich?" },
         { hungarian: "Mit?", german: "Was denn?" },
         { hungarian: "Mi jön utána?", german: "Was komm dann?" },
+        // week 6
+        { hungarian: "Ki ez?", german: "Wer ist das?" },
+        { hungarian: "Szabad veletek játszanom?", german: "Darf ist mitspielen?" },
+        { hungarian: "Hogyan kérem?", german: "Wie bitte?" },
+        { hungarian: "Milyen/Hogyan?", german: "Wie?" },
+        { hungarian: "Új vagy itt?", german: "Bist du neu hier?" },
     ],
     // numbers: [
     //     { hungarian: "egy", german: "eins" },
@@ -127,6 +140,16 @@ const wordGroups = {
         { hungarian: "kártyajáték", german: "karten" },
         { hungarian: "jönni", german: "kommen" },
         { hungarian: "jön", german: "kommt" },
+        // week 6
+        { hungarian: "most", german: "jetzt" },
+        { hungarian: "szorgalmas", german: "fleißig" },
+        { hungarian: "lusta", german: "faul" },
+        { hungarian: "semmi/semmit", german: "nichts" },
+        { hungarian: "unalmas", german: "langweilig" },
+        { hungarian: "új", german: "neu" },
+        { hungarian: "itt", german: "hier" },
+        { hungarian: "sajnos/kár", german: "schade" },
+
     ]
 };
 
