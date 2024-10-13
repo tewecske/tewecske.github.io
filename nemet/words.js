@@ -41,7 +41,6 @@ function getRandomMessageNumber(array) {
 const wordGroups = {
     nouns: [
         { hungarian: "térkép", german: "die Landkarte" },
-        { hungarian: "tejszín", german: "die Sahne" },
         { hungarian: "állatkert", german: "der Zoo" },
         { hungarian: "bolt", german: "der Supermarkt" },
         { hungarian: "fiú", german: "der Junge" },
@@ -54,7 +53,7 @@ const wordGroups = {
         { hungarian: "kosárlabda", german: "der Basketball" },
         { hungarian: "tanárnő", german: "die Lehrerin" },
         { hungarian: "igazgató", german: "der Direktor" },
-        { hungarian: "zászó", german: "die Fahne" },
+        { hungarian: "zászló", german: "die Fahne" },
         { hungarian: "matek", german: "die Mathematik" },
         { hungarian: "CD", german: "die CD" },
         { hungarian: "internet", german: "das Internet" },
