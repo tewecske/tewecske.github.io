@@ -74,7 +74,7 @@ const wordGroups = {
         { hungarian: "anya", german: "die Mutter" },
         { hungarian: "szülők", german: "die Eltern" },
         { hungarian: "nagyapa", german: "der Opa / Großvater" },
-        { hungarian: "nagymama", german: "der Oma / Großmutter" },
+        { hungarian: "nagymama", german: "die Oma / Großmutter" },
         { hungarian: "nagyszülők", german: "die Großeltern" },
         { hungarian: "fiútestvér", german: "der Bruder" },
         { hungarian: "lánytestvér", german: "die Schwester" },
