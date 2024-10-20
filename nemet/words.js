@@ -159,7 +159,6 @@ const wordGroups = {
         { hungarian: "jönni", german: "kommen" },
         { hungarian: "jön", german: "kommt" },
         // week 6
-        { hungarian: "most", german: "jetzt" },
         { hungarian: "szorgalmas", german: "fleißig" },
         { hungarian: "lusta", german: "faul" },
         { hungarian: "semmi/semmit", german: "nichts" },
