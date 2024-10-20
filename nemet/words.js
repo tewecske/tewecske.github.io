@@ -62,6 +62,23 @@ const wordGroups = {
         { hungarian: "pingpong", german: "das Tischtennis" },
         { hungarian: "fogócska", german: "das Fangen" },
         { hungarian: "foci", german: "der Fußball" },
+        // week 7
+        { hungarian: "rejtvény", german: "das Rätsel" },
+        { hungarian: "bohóc", german: "der Clown" },
+        { hungarian: "ímél (e-mail)", german: "die Mail" },
+        { hungarian: "szám", german: "die Nummer" },
+        { hungarian: "megoldás", german: "die Lösung" },
+        { hungarian: "képregény", german: "der Comic" },
+        { hungarian: "család", german: "die Familie" },
+        { hungarian: "apa", german: "der Vater" },
+        { hungarian: "anya", german: "die Mutter" },
+        { hungarian: "szülők", german: "die Eltern" },
+        { hungarian: "nagyapa", german: "der Opa / Großvater" },
+        { hungarian: "nagymama", german: "der Oma / Großmutter" },
+        { hungarian: "nagyszülők", german: "die Großeltern" },
+        { hungarian: "fiútestvér", german: "der Bruder" },
+        { hungarian: "lánytestvér", german: "die Schwester" },
+        { hungarian: "testvérek", german: "die Geschwister" },
     ],
     // adjectives: [
     //     { hungarian: "kedves", german: "nett" }
@@ -80,6 +97,7 @@ const wordGroups = {
         { hungarian: "Te következel", german: "Du bist dran" },
         { hungarian: "Rajta!", german: "Also los!" },
         { hungarian: "Nyertem!", german: "Gewonnen!" },
+        { hungarian: "Nekem van/birtokolok valamit", german: "Ich habe" },
         // week 6
         { hungarian: "Áruljátok el!", german: "Ratet!" },
         { hungarian: "Viszontlátásra!", german: "Auf Wiedersehen!" },
@@ -87,6 +105,7 @@ const wordGroups = {
         { hungarian: "(Mi) nem csinálunk semmit", german: "Wir machen nichts" },
         { hungarian: "Milyen unalmas!", german: "Wie langweilig!" },
         { hungarian: "Sajnálom", german: "Tut mir leid" },
+        { hungarian: "Áruld el!", german: "Ratet mal!" },
     ],
     questions: [
         { hungarian: "Ki vagy te?", german: "Wer bist du denn?" },
@@ -148,6 +167,8 @@ const wordGroups = {
         { hungarian: "új", german: "neu" },
         { hungarian: "itt", german: "hier" },
         { hungarian: "sajnos/kár", german: "schade" },
+        // week 7
+        { hungarian: "küldeni", german: "schicken" },
 
     ]
 };
