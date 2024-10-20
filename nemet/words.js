@@ -222,7 +222,7 @@ function getNewQuestion() {
         derdiedasContainer.innerHTML = '';
     if (currentCategory === 'nouns') {
         currentDerDieDas = currentWord.german.split(' ')[0]
-        options = [currentWord.german.split(' ')[1], ...shuffledWords.slice(1, 4).map(w => w.german.split(' ')[1])];
+        options = [currentWord.german.split(' ').slice(1).join(' '), ...shuffledWords.slice(1, 4).map(w => w.german.split(' ').slice(1).join(' '))];
         options = shuffleArray(options);
         DerDieDas.forEach(option => {
             const button = document.createElement('button');
