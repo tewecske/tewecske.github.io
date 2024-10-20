@@ -279,6 +279,7 @@ function checkAnswer() {
     const optionSelected = document.querySelector('.options button.isselected');
     if (optionSelected !== null) {
         option = optionSelected.innerText
+        console.log("option", option);
     }
 
     let isCorrect;
