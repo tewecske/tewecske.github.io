@@ -40,6 +40,16 @@ const wordGroups = {
         { hungarian: "fiútestvér", german: "der Bruder" },
         { hungarian: "lánytestvér", german: "die Schwester" },
         { hungarian: "testvérek", german: "die Geschwister" },
+        // week 8
+        { hungarian: "unoka", german: "das Enkelkind" },
+        { hungarian: "fiúunoka", german: "der Enkel" },
+        { hungarian: "lányunoka", german: "die Enkelin" },
+        { hungarian: "fia valakinek", german: "der Sohn" },
+        { hungarian: "lánya valakinek", german: "die Tochter" },
+        { hungarian: "nagynéni", german: "die Tante" },
+        { hungarian: "nagybácsi", german: "der Onkel" },
+        { hungarian: "fiúunokatestvér", german: "der Cousin" },
+        { hungarian: "lányunokatestvér", german: "die Cousine" },
     ],
     // adjectives: [
     //     { hungarian: "kedves", german: "nett" }
