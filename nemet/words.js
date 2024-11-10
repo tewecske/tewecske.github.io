@@ -50,6 +50,9 @@ const wordGroups = {
         { hungarian: "nagybácsi", german: "der Onkel" },
         { hungarian: "fiúunokatestvér", german: "der Cousin" },
         { hungarian: "lányunokatestvér", german: "die Cousine" },
+        // week 9
+        { hungarian: "barát", german: "der Freund" },
+        { hungarian: "barátnő", german: "die Freundin" },
     ],
     // adjectives: [
     //     { hungarian: "kedves", german: "nett" }
@@ -77,6 +80,10 @@ const wordGroups = {
         { hungarian: "Milyen unalmas!", german: "Wie langweilig!" },
         { hungarian: "Sajnálom", german: "Tut mir leid" },
         { hungarian: "Áruld el!", german: "Ratet mal!" },
+        // week 9
+        { hungarian: "Magyarországról jövök", german: "Ich komme aus Ungarn" },
+        { hungarian: "Na, vagy úgy!", german: "Na so was!" },
+        { hungarian: "Gyertek be!", german: "Kommt mal rein!" },
     ],
     questions: [
         { hungarian: "Ki vagy te?", german: "Wer bist du denn?" },
@@ -90,6 +97,9 @@ const wordGroups = {
         { hungarian: "Hogyan kérem?", german: "Wie bitte?" },
         { hungarian: "Milyen/Hogyan?", german: "Wie?" },
         { hungarian: "Új vagy itt?", german: "Bist du neu hier?" },
+        // week 9
+        { hungarian: "Honnan jössz?", german: "Woher kommst du?" },
+        { hungarian: "Szeretnél velünk játszani?", german: "Möchtest du mitspielen?" },
     ],
     // numbers: [
     //     { hungarian: "egy", german: "eins" },
@@ -139,6 +149,10 @@ const wordGroups = {
         { hungarian: "sajnos/kár", german: "schade" },
         // week 7
         { hungarian: "küldeni", german: "schicken" },
+        // week 9
+        { hungarian: "rajzolni", german: "zeichnen" },
+        { hungarian: "rajzolok", german: "ich zeichne" },
+        { hungarian: "de", german: "aber" },
 
     ]
 };
