@@ -366,8 +366,8 @@ function setupFewWords() {
         }
     } else {
         for (let category of categories) {
-            fewWordGroups[category] = wordGroups[category].slice(0, fewWords);
-            console.log(fewWordGroups[category]);
+            fewWordGroups[category] = wordGroups[category].slice(-fewWords);
+            // console.log(fewWordGroups[category]);
         }
     }
 }
