@@ -16,6 +16,19 @@ input[type="number"] {
     border-radius: 10px;
 }
 
+.fewWordsInput {
+    display: block;
+}
+
+.fewWordsCheckbox {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
 .derdiedas {
     margin-bottom: 2rem;
 }

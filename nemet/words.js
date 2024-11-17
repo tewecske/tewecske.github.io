@@ -169,8 +169,14 @@ const wordGroups = {
 };
 
 const DerDieDas = ['der', 'die', 'das'];
+const categories = Object.keys(wordGroups);
 let currentWord;
 let currentCategory;
+
+const fewWordsCheckboxName = 'fewWordsCheckbox';
+const fewWordsCookieName = 'fewWordsCookie';
+let fewWordsCheckbox;
+let fewWords = 0;
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -186,11 +192,46 @@ let memory = {
     questions: [],
     other: [],
 }
+let fewWordGroups = {
+    nouns: [],
+    expressions: [],
+    questions: [],
+    other: [],
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i].trim();
+    if (c === name) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function setCookie(name, value) {
+    document.cookie = `${name}=${value};path=/`;
+}
+
+function deleteCookie(name) {
+    document.cookie = `${name}=;path=/;expires=Thu, 01 Jan 1970 00:00:01 GMT`;
+}
+
+function clearAll() {
+    for (let category of categories) {
+        fewWordGroups[category].length = 0;
+    }
+    for (let category of categories) {
+        memory[category].length = 0;
+    }
+}
 
 function getNewQuestion() {
-    const categories = Object.keys(wordGroups);
     currentCategory = categories[Math.floor(Math.random() * categories.length)];
-    const words = wordGroups[currentCategory];
+    const words = fewWordGroups[currentCategory];
     const shuffledWords = shuffleArray([...words]);
     let currentWordIdx = 0;
     currentWord = shuffledWords[currentWordIdx];
@@ -318,7 +359,47 @@ function handleAction() {
 
 document.getElementById('submitBtn').addEventListener('click', handleAction);
 
+function setupFewWords() {
+    if (fewWords === 0) {
+        for (let category of categories) {
+            fewWordGroups[category] = wordGroups[category].slice();
+        }
+    } else {
+        for (let category of categories) {
+            fewWordGroups[category] = wordGroups[category].slice(0, fewWords);
+            console.log(fewWordGroups[category]);
+        }
+    }
+}
+
 window.onload = function() {
+    fewWordsCheckbox = document.getElementById(fewWordsCheckboxName);
+    const fewWordsCookie = getCookie(fewWordsCookieName);
+    if (fewWordsCookie === '10') {
+        console.log('cookie found');
+        fewWordsCheckbox.checked = true;
+        fewWords = 10;
+    } else {
+        console.log('cookie NOT found');
+        fewWordsCheckbox.checked = false;
+        fewWords = 0;
+    }
+    setupFewWords();
+    fewWordsCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+            setCookie(fewWordsCookieName, '10');
+            fewWords = 10;
+            clearAll();
+            setupFewWords();
+            getNewQuestion();
+        } else {
+            deleteCookie(fewWordsCookieName);
+            fewWords = 0;
+            clearAll();
+            setupFewWords();
+            getNewQuestion();
+        }
+    });
     getNewQuestion();
 };
 
