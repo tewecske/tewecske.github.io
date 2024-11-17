@@ -53,6 +53,9 @@ const wordGroups = {
         // week 9
         { hungarian: "barát", german: "der Freund" },
         { hungarian: "barátnő", german: "die Freundin" },
+        // week 10
+        { hungarian: "kedv", german: "die Lust" },
+        
     ],
     // adjectives: [
     //     { hungarian: "kedves", german: "nett" }
@@ -84,6 +87,11 @@ const wordGroups = {
         { hungarian: "Magyarországról jövök", german: "Ich komme aus Ungarn" },
         { hungarian: "Na, vagy úgy!", german: "Na so was!" },
         { hungarian: "Gyertek be!", german: "Kommt mal rein!" },
+        // week 10
+        { hungarian: "Nincs kedvem", german: "Ich habe keine Lust" },
+        { hungarian: "Micsoda butaság!", german: "So ein Quatsch!" },
+        { hungarian: "Gyerünk tovább!", german: "Los, weiter!" },
+
     ],
     questions: [
         { hungarian: "Ki vagy te?", german: "Wer bist du denn?" },
@@ -153,6 +161,9 @@ const wordGroups = {
         { hungarian: "rajzolni", german: "zeichnen" },
         { hungarian: "rajzolok", german: "ich zeichne" },
         { hungarian: "de", german: "aber" },
+        // week 10
+        { hungarian: "tovább", german: "weiter" },
+        { hungarian: "buta", german: "doof" },
 
     ]
 };
