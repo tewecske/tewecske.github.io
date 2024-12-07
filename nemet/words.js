@@ -91,6 +91,8 @@ const wordGroups = {
         { hungarian: "Nincs kedvem", german: "Ich habe keine Lust" },
         { hungarian: "Micsoda butaság!", german: "So ein Quatsch!" },
         { hungarian: "Gyerünk tovább!", german: "Los, weiter!" },
+        // week 11
+        { hungarian: "Viszlát nemsokára! / Viszlát!", german: "Bis bald!" },
 
     ],
     questions: [
@@ -164,6 +166,22 @@ const wordGroups = {
         // week 10
         { hungarian: "tovább", german: "weiter" },
         { hungarian: "buta", german: "doof" },
+        { hungarian: "már", german: "schon" },
+        // week 11
+        { hungarian: "valami/valamit", german: "etwas" },
+        { hungarian: "rólam", german: "von mir" },
+        { hungarian: "tudni", german: "wissen" },
+        { hungarian: "otthon", german: "zu Hause" },
+        { hungarian: "kedves", german: "lieb" },
+        { hungarian: "nagyon", german: "sehr" },
+        { hungarian: "gyakran", german: "oft" },
+        { hungarian: "nálam", german: "bei mir" },
+        { hungarian: "mindig", german: "immer" },
+        { hungarian: "csak", german: "erst" },
+        { hungarian: "szívesebben", german: "lieber" },
+        { hungarian: "még", german: "noch" },
+        { hungarian: "együtt", german: "zusammen" },
+        { hungarian: "mondani", german: "sagen" },
 
     ]
 };
@@ -366,7 +384,7 @@ function setupFewWords() {
         }
     } else {
         for (let category of categories) {
-            fewWordGroups[category] = wordGroups[category].slice(-fewWords);
+            fewWordGroups[category] = wordGroups[category].slice(wordGroups[category].size/5*3, wordGroups[category].size);
             // console.log(fewWordGroups[category]);
         }
     }
