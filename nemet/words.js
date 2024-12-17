@@ -55,6 +55,18 @@ const wordGroups = {
         { hungarian: "barátnő", german: "die Freundin" },
         // week 10
         { hungarian: "kedv", german: "die Lust" },
+        // week 12
+        { hungarian: "űrhajós", german: "der Astronaut" },
+        { hungarian: "focistanő", german: "die Fußballspielerin" },
+        { hungarian: "focista", german: "der Fußballspielern" },
+        { hungarian: "osztály", german: "die Klasse" },
+        { hungarian: "ajtó", german: "die Tür" },
+        { hungarian: "szekrény", german: "der Schrank" },
+        { hungarian: "papírkosár", german: "der Papierkorb" },
+        { hungarian: "tábla", german: "die Tafel" },
+        { hungarian: "ablak", german: "das Fenster" },
+        { hungarian: "szék", german: "der Stuhl" },
+        { hungarian: "asztal", german: "der Tisch" },
         
     ],
     // adjectives: [
@@ -93,6 +105,8 @@ const wordGroups = {
         { hungarian: "Gyerünk tovább!", german: "Los, weiter!" },
         // week 11
         { hungarian: "Viszlát nemsokára! / Viszlát!", german: "Bis bald!" },
+        // week 12
+        { hungarian: "Ez nem megy.", german: "Das geht nicht." },
 
     ],
     questions: [
@@ -110,6 +124,8 @@ const wordGroups = {
         // week 9
         { hungarian: "Honnan jössz?", german: "Woher kommst du?" },
         { hungarian: "Szeretnél velünk játszani?", german: "Möchtest du mitspielen?" },
+        // week 12
+        { hungarian: "Mi történt?", german: "Was ist denn los?" },
     ],
     // numbers: [
     //     { hungarian: "egy", german: "eins" },
@@ -182,6 +198,11 @@ const wordGroups = {
         { hungarian: "még", german: "noch" },
         { hungarian: "együtt", german: "zusammen" },
         { hungarian: "mondani", german: "sagen" },
+        // week 12
+        { hungarian: "érdekes", german: "interessant" },
+        { hungarian: "vicces", german: "komisch" },
+        { hungarian: "szép", german: "schön" },
+        { hungarian: "fénképezni", german: "Foto machen" },
 
     ]
 };
