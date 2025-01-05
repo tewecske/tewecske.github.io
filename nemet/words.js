@@ -67,6 +67,36 @@ const wordGroups = {
         { hungarian: "ablak", german: "das Fenster" },
         { hungarian: "szék", german: "der Stuhl" },
         { hungarian: "asztal", german: "der Tisch" },
+        // sachkunde 2
+        { german: "das Sinnesorgan-e", hungarian: "érzékszerv" },
+        { german: "die Sinne", hungarian: "érzék" },
+        { german: "die Finger - n", hungarian: "ujj" },
+        { german: "das Auge - n", hungarian: "szem" },
+        { german: "die Zunge", hungarian: "nyelv" },
+        { german: "die Haut", hungarian: "bőr" },
+        { german: "die Nase", hungarian: "orr" },
+        { german: "das Ohr - en", hungarian: "fül" },
+        // sachkunde 2.5
+        { german: "die Ente", hungarian: "kacsa" },
+        { german: "der Käfer", hungarian: "bogár" },
+        { german: "das Pferd", hungarian: "ló" },
+        { german: "der Fuchs", hungarian: "róka" },
+        { german: "der Hase", hungarian: "nyúl" },
+        { german: "die Schlange", hungarian: "kígyó" },
+        { german: "der Fisch", hungarian: "hal" },
+        { german: "der Vogel", hungarian: "madár" },
+        { german: "die Heuschrecke", hungarian: "szöcske" },
+        // sachkunde 3
+        { german: "das Wasser", hungarian: "víz" },
+        { german: "der Schneemann", hungarian: "hóember" },
+        { german: "das Eis", hungarian: "jég" },
+        { german: "der Eiswürfel", hungarian: "jégkocka" },
+        { german: "die Schneeflocke", hungarian: "hópehely" },
+        { german: "der Nebel", hungarian: "köd" },
+        { german: "die Wolke", hungarian: "felhő" },
+        { german: "der Regen", hungarian: "eső" },
+        { german: "die Zustandsform", hungarian: "halmazállapot" },
+        { german: "der Wasserdampf / Dampf", hungarian: "vízgőz" },
         
     ],
     // adjectives: [
@@ -203,6 +233,51 @@ const wordGroups = {
         { hungarian: "vicces", german: "komisch" },
         { hungarian: "szép", german: "schön" },
         { hungarian: "fénképezni", german: "Foto machen" },
+        // sachkunde 1
+        { german: "kalt", hungarian: "hideg" },
+        { german: "heiß", hungarian: "forró" },
+        { german: "warm", hungarian: "meleg" },
+        { german: "leicht", hungarian: "könnyű" },
+        { german: "schwer", hungarian: "nehéz" },
+        { german: "jung", hungarian: "fiatal" },
+        { german: "klein", hungarian: "kicsi" },
+        { german: "groß", hungarian: "nagy" },
+        { german: "lang", hungarian: "hosszú" },
+        { german: "kurz", hungarian: "rövid" },
+        { german: "hart", hungarian: "kemény" },
+        { german: "weich", hungarian: "puha" },
+        { german: "rau", hungarian: "érdes" },
+        { german: "glatt", hungarian: "sima" },
+        { german: "rund", hungarian: "kerek" },
+        { german: "eckig", hungarian: "szögletes" },
+        { german: "dick", hungarian: "kövér" },
+        { german: "dünn", hungarian: "vékony" },
+        { german: "schnell", hungarian: "gyors" },
+        { german: "langsam", hungarian: "lassú" },
+        // sachkunde 2
+        { german: "tasten", hungarian: "tapintani" },
+        { german: "sehen", hungarian: "látni" },
+        { german: "schmecken", hungarian: "ízlelni/ízelni" },
+        { german: "fühlen", hungarian: "érezni" },
+        { german: "riechen", hungarian: "szagolni" },
+        { german: "hören", hungarian: "hallani" },
+        // sachkunde 2.5
+        { german: "galoppieren", hungarian: "vágtat" },
+        { german: "fliegen", hungarian: "repül" },
+        { german: "hoppeln", hungarian: "ugrál" },
+        { german: "hüpfen", hungarian: "szökdécsel" },
+        { german: "krabbeln", hungarian: "mászik" },
+        { german: "schlängeln", hungarian: "kúszik" },
+        { german: "schleichen", hungarian: "oson" },
+        { german: "schwimmen", hungarian: "úszik" },
+        { german: "watscheln", hungarian: "totyog" },
+        // sachkunde 3
+        { german: "fest", hungarian: "szilárd" },
+        { german: "flüssig", hungarian: "folyékony" },
+        { german: "gasförmig", hungarian: "légnemű" },
+        { german: "wichtig", hungarian: "fontos" },
+        { german: "kochen", hungarian: "főzni" },
+        { german: "trinken", hungarian: "inni" },
 
     ]
 };
@@ -405,7 +480,7 @@ function setupFewWords() {
         }
     } else {
         for (let category of categories) {
-            fewWordGroups[category] = wordGroups[category].slice(wordGroups[category].size/5*3, wordGroups[category].size);
+            fewWordGroups[category] = wordGroups[category].slice(wordGroups[category].size/5*1, wordGroups[category].size);
             // console.log(fewWordGroups[category]);
         }
     }
