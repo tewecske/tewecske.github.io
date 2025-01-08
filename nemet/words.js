@@ -97,6 +97,13 @@ const wordGroups = {
         { german: "der Regen", hungarian: "eső" },
         { german: "die Zustandsform", hungarian: "halmazállapot" },
         { german: "der Wasserdampf / Dampf", hungarian: "vízgőz" },
+        // week 13
+        { german: "der Schüler", hungarian: "tanuló" },
+        { german: "die Schülerin", hungarian: "tanulólány" },
+        { german: "der Lehrer", hungarian: "tanár" },
+        { german: "die Lehrerin", hungarian: "tanárnő" },
+        { german: "der Herr", hungarian: "úr" },
+        { german: "der Sportlehrer", hungarian: "tesitanár" },
         
     ],
     // adjectives: [
@@ -137,6 +144,10 @@ const wordGroups = {
         { hungarian: "Viszlát nemsokára! / Viszlát!", german: "Bis bald!" },
         // week 12
         { hungarian: "Ez nem megy.", german: "Das geht nicht." },
+        // week 13
+        { german: "von meiner Klasse", hungarian: "az osztályomról" },
+        { german: "wir sind", hungarian: "mi vagyunk" },
+        { german: "Viele Grüße", hungarian: "Sok üdvözlet (Üdvözlettel)" },
 
     ],
     questions: [
@@ -278,6 +289,9 @@ const wordGroups = {
         { german: "wichtig", hungarian: "fontos" },
         { german: "kochen", hungarian: "főzni" },
         { german: "trinken", hungarian: "inni" },
+        // week 13
+        { german: "dir", hungarian: "neked" },
+        { german: "Raten", hungarian: "barkóba" },
 
     ]
 };
