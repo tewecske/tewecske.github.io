@@ -148,6 +148,10 @@ const wordGroups = {
         { german: "von meiner Klasse", hungarian: "az osztályomról" },
         { german: "wir sind", hungarian: "mi vagyunk" },
         { german: "Viele Grüße", hungarian: "Sok üdvözlet (Üdvözlettel)" },
+        // week 14
+        { german: "Ich möchte tanzen", hungarian: "Táncolni szeretnék" },
+        { german: "Spielen macht mir Spaß", hungarian: "Kedvem telik benne" },
+        { german: "Ich sehe fern", hungarian: "TV-t nézek" },
 
     ],
     questions: [
@@ -167,6 +171,10 @@ const wordGroups = {
         { hungarian: "Szeretnél velünk játszani?", german: "Möchtest du mitspielen?" },
         // week 12
         { hungarian: "Mi történt?", german: "Was ist denn los?" },
+        // week 14
+        { german: "Was möchtest do denn?", hungarian: "Mit szeretnél?" },
+        { german: "Wann?", hungarian: "Mikor?" },
+        { german: "Warum?", hungarian: "Miért?" },
     ],
     // numbers: [
     //     { hungarian: "egy", german: "eins" },
@@ -292,6 +300,19 @@ const wordGroups = {
         // week 13
         { german: "dir", hungarian: "neked" },
         { german: "Raten", hungarian: "barkóba" },
+        // week 14
+        { german: "lieber", hungarian: "szívesebben" },
+        { german: "möchten", hungarian: "szeretni" },
+        { german: "im Garten", hungarian: "kertben" },
+        { german: "rennen", hungarian: "rohanni" },
+        { german: "fragen", hungarian: "kérdezni" },
+        { german: "bellen", hungarian: "ugatni" },
+        { german: "kaufen", hungarian: "vásárolni" },
+        { german: "Fahrrad fahren", hungarian: "biciklizni" },
+        { german: "Klavier spielen", hungarian: "zongorázni" },
+        { german: "fern sehen", hungarian: "TV-t nézni" },
+        { german: "lange schlafen", hungarian: "hosszan aludni" },
+        { german: "hören", hungarian: "hallani" },
 
     ]
 };
