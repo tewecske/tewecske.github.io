@@ -104,6 +104,26 @@ const wordGroups = {
         { german: "die Lehrerin", hungarian: "tanárnő" },
         { german: "der Herr", hungarian: "úr" },
         { german: "der Sportlehrer", hungarian: "tesitanár" },
+        // week 15
+        { german: "das Lineal", hungarian: "vonalzó" },
+        { german: "das Heft", hungarian: "füzet" },
+        { german: "das Blatt", hungarian: "papír / lap" },
+        { german: "das Turnzeug", hungarian: "tornacucc" },
+        { german: "das Mäppchen", hungarian: "tolltartó" },
+        { german: "das Buch", hungarian: "könyv" },
+        { german: "die Kreide", hungarian: "kréta" },
+        { german: "die Schere", hungarian: "olló" },
+        { german: "die Tasche", hungarian: "táska" },
+        { german: "der Bleistift", hungarian: "grafitceruza" },
+        { german: "der Füller", hungarian: "golyóstoll" },
+        { german: "der Spitzer", hungarian: "hegyező" },
+        { german: "der Farbstift", hungarian: "színesceruza" },
+        { german: "der Ruchsack", hungarian: "hátizsák" },
+        { german: "der Block", hungarian: "jegyzettömb" },
+        { german: "der Malkasten", hungarian: "festékkészlet" },
+        { german: "der Radiergummi", hungarian: "radír" },
+        { german: "der Pinsel", hungarian: "ecset" },
+
         
     ],
     // adjectives: [
@@ -152,6 +172,10 @@ const wordGroups = {
         { german: "Ich möchte tanzen", hungarian: "Táncolni szeretnék" },
         { german: "Spielen macht mir Spaß", hungarian: "Kedvem telik benne" },
         { german: "Ich sehe fern", hungarian: "TV-t nézek" },
+        // week 15
+        { german: "Ich habe das Heft dabei", hungarian: "Nálam van a füzet" },
+        { german: "Ich habe das Heft nich dabei", hungarian: "Nincs nálam a füzet" },
+        { german: "Nimm!", hungarian: "Vedd! Fogd!" },
 
     ],
     questions: [
@@ -313,6 +337,13 @@ const wordGroups = {
         { german: "fern sehen", hungarian: "TV-t nézni" },
         { german: "lange schlafen", hungarian: "hosszan aludni" },
         { german: "hören", hungarian: "hallani" },
+        // week 15
+        { german: "arbeiten", hungarian: "dolgozni" },
+        { german: "dort", hungarian: "ott" },
+        { german: "hier", hungarian: "itt" },
+        { german: "da", hungarian: "itt / ott / ekkor / akkor" },
+        { german: "dabeihaben", hungarian: "nála van" },
+        { german: "nehmen", hungarian: "venni / vinni / fogn" },
 
     ]
 };
